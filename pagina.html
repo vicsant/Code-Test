@@ -1,0 +1,112 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="estilo.css"/>
+</head>
+<body>
+
+
+<div align=center ><h1><font color="blue">Hi User! We just want to know more of you. So here is some questions.</font><h1></div> 
+
+
+
+<form  >
+
+
+ <label for="">First Name</label>
+<input type="text" id="textinput" onkeyup="Espacios()" placeholder="Llenar campo" onblur="Validacion(this)" /> 
+<label id="vacio" style="display:none;" >No puede estar vacio</label> 
+
+<a ><br>  Your First Name is :  <output id="textoutput">  </output></a>
+<br>  
+<br>
+
+
+
+  
+  <label for="">Last Name</label>
+<input type="text" id="lastinput" onkeyup="Reverso()"  placeholder="Llenar campo" onblur="Validacion1(this, lastoutput)"  />
+<label id="vacio1" style="display:none;" >No puede estar vacio</label> 
+
+<a ><br>  Your Last Name in Reverse is :  <output id="lastoutput"  ></output></a>
+<br>
+<br>
+
+
+
+
+
+  <label for="">Favorite Food</label>
+<input type="text"  id="comidainput"  onkeyup="MostrarComida()" placeholder="Llenar campo" onblur="Validacion2(this)" /> 
+<label id="vacio2" style="display:none;" >No puede estar vacio</label> 
+<a ><br>  Your favorite food in Ascii code is : <output name="Your Favorite Food in Ascii is :"   id="comidaoutput" > </output> </a>
+<br>
+<br>
+
+
+
+
+
+
+  <label for="">Favorite Number</label>
+<input type="text" id="n1input"  onkeyup="MostrarNumero()" placeholder="Llenar campo" class="textfield" value=""  onkeypress="return SoloNumero(event)" onblur="Validacion3(this)" >
+<label id="vacio3" style="display:none;" >No puede estar vacio</label> 
+<a ><br>  Your favorite Number is : <output name="Your Favorite Number is :"   id="n2output" > </output> </a>
+<br>
+<br>
+
+
+
+
+
+
+
+  <label for="">Favorite Day of week</label>
+  <select id="d1input" onchange="MostrarDia()">
+<option value=>Eliga una</option>
+<option value="1">Lunes</option>
+<option value="2">Martes</option>
+<option value="3">Miercoles</option>
+<option value="4">Jueves</option>
+<option value="5">Viernes</option>
+<option value="6">Sabado</option>
+<option value="0">Domingo</option>
+</select>
+<a ><br>  Your favorite Day is : <output type="text" name="Your Favorite Day is :"   id="d2output" > </output> </a>
+
+<br>
+<br>
+
+
+
+
+
+
+  <label for="">Favorite Color</label>
+  <select  id="c1input" onchange="MostrarColor()">
+<option value=>Eliga una</option>
+<option value="yellow">Dorado</option>
+<option value="red">Rojo</option>
+<option value="cyan">Celeste</option>
+<option value="green">Verde</option>
+<option value="black">Negro</option>
+<option value="brown">Cafe</option>
+<option value="gray">Gris</option>
+</select>
+<a ><br>  Your favorite Color is : <output  type="text" name="Your Favorite Color is:"  id="c2output" > </output>  <span id="cuadrodecolor"></span></a>
+<br>
+<br>
+
+
+<input  type="button" value="Submit" </>
+
+
+
+
+</form>
+
+<script src="vsapp.js"></script>
+
+
+
+</body>
+</html>
